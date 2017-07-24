@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Which is the biggest city of M.p?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/radiocity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/ebbhopal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bhopal"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/rbjabalpur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jabalpur"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbgwalior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gwalior"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbindore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indore"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Check" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ClientMapWebview</string>
+    <string name="action_settings">Setting</string>
+    <string name="title_activity_map_using_local_index">MapUsingLocalIndex</string>
+</resources>

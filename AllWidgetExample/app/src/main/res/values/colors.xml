@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="violet">#b1299f</color>
+    <color name="indigo">#3c22cf</color>
+    <color name="blue">#3362da</color>
+    <color name="green">#2ad921</color>
+    <color name="yellow">#efce10</color>
+    <color name="orange">#e44911</color>
+    <color name="red">#FF0000</color>
+    <color name="grey_light">#e1dddd</color>
+    <color name="grey_dark">#b1abab</color>
+    <string-array name="movie_serial_bg">
+        <item>#24c6d5</item>
+        <item>#57dd86</item>
+        <item>#ad7dcf</item>
+        <item>#ff484d</item>
+        <item>#fcba59</item>
+        <item>#24c6d5</item>
+    </string-array>
+
+</resources>

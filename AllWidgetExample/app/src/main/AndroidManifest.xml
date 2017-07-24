@@ -1,0 +1,511 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    package="agrawal.snehal.allwidgetexample">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".connectin_check.AllWidgetApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <receiver android:name="MyBroadcastReceiver" />
+        <service
+            android:name=".service.MyService"
+            android:enabled="true" />
+        <receiver
+            android:name=".connectin_check.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="agrawal.snehal.allwidgetexample.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EdittextTextviewExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ImageButtonImageExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".CheckBoxExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".RadioButtonExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".SpinnerExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".AutocompleteTextViewExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+        <activity android:name=".listexample.ListViewSimpleCursorAdapter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".listexample.ListViewArrayAdapter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".listexample.ListViewListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".listexample.ListViewSimpleAdapter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".listexample.ListViewExpandable">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".listexample.ListViewInfinite">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".listexample.ListViewBasedapter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ToggleProgressSeekSwitchRate">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SnackBarExample"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".QuickContactBadgeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".GridViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".tabhost.TabHostSimpleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".tabhost.TabHostIntentActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".tabhost.TabHostFragmentActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SearchViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".TimePickerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".DatePickerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".CalenderViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ChronometerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".TextClockActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+        <activity android:name=".ViewSwitcherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ViewAnimatorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ViewFlipperActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".TextSwitcherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".StackViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+        <activity android:name=".AdapterViewFlipperActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ImageSwitcherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ViewStubActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".SurfaceViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".TaxtureViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".tablayout.TabLayoutScrollableTab"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SnackBarExample" />
+        </activity>
+        <activity
+            android:name=".tablayout.TabLayoutSimpleTab"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SnackBarExample" />
+        </activity>
+        <activity
+            android:name=".tablayout.TabLayoutIconTextTabs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SnackBarExample" />
+        </activity>
+        <activity
+            android:name=".tablayout.TabLayoutIconTabs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SnackBarExample" />
+        </activity>
+        <activity
+            android:name=".tablayout.TabLayoutCustomIconTextTabs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SnackBarExample" />
+        </activity>
+
+
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".NotificationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConnectionCheck"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".SqliteDatabaseExample">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".SwipeToRefresh">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".TextToSpeechActivty">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ExternalFont">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+        <activity android:name=".PermissionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".AnimationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.FadeInActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.FadeOutActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.CrossfadeActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.BlinkActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.ZoomInActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.ZoomOutActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.RotateActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.MoveActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.SlideUpActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.SlideDownActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.BounceActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.SequentialActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="agrawal.snehal.allwidgetexample.animation.TogetherActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".CameraAPI"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ExportCSV">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".FilePickerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".filepicker.PhotoSelectGallery" />
+        <activity android:name=".DownloadDoc">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".filedownload.PdfDownload" />
+        <activity android:name="VideoStreamingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".AudioStreamingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".imagezoom.ImageZoomSingleTouchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".imagezoom.ImageZoomMirroringActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".imagezoom.ImageZoomViewPagerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".CallMailLink">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".listexample.AlphabeticIndex">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+        <activity android:name=".listexample.SectionListView">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+        <activity android:name=".listexample.AlphabeticIndexWithGroupHeader">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".XMLParsing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".xmlparsersupport.SingleMenuItemActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.XMLParsing" />
+        </activity>
+        <activity android:name=".SensorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.XMLParsing" />
+        </activity>
+        <activity android:name=".sensordetail.SensorDetailAll">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SensorActivity" />
+        </activity>
+        <activity android:name=".sensordetail.AccelerometerSensor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SensorActivity" />
+        </activity>
+        <activity android:name=".sensordetail.ProximitySensor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.SensorActivity" />
+        </activity>
+        <activity android:name=".MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".ServiceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".AlarmActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".RecordMedia">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+        <activity android:name=".BluetoothActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="agrawal.snehal.allwidgetexample.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

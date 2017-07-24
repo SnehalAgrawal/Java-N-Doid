@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/blogout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="Profile"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+    <item
+        android:id="@+id/battach"
+        android:icon="@drawable/ic_attachment_black_24dp"
+        android:title="Profile"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+    <item
+        android:id="@+id/bview"
+        android:icon="@drawable/ic_image"
+        android:title="Profile"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+
+</menu>

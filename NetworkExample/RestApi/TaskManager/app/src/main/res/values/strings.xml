@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rest Api</string>
+    <string name="shared_database_name">restapi_example</string>
+    <string name="user_name">user_name</string>
+    <string name="user_email">user_email</string>
+    <string name="user_auth_key">user_auth_key</string>
+    <string name="user_created_date">user_created_date</string>
+</resources>

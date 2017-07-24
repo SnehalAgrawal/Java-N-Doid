@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btoast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Button(Toast)" />
+
+        <Button
+            android:id="@+id/bedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="EditText/TextView Example" />
+
+        <ImageButton
+            android:id="@+id/bimagebutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="clicktogo"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <Button
+            android:id="@+id/bcheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Checkbox" />
+
+        <Button
+            android:id="@+id/bradiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Radio Button" />
+
+        <Button
+            android:id="@+id/bspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Spinner/Dropdown" />
+
+        <Button
+            android:id="@+id/bautocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Auto Complete Text" />
+
+        <Button
+            android:id="@+id/blistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="ListView" />
+
+        <Button
+            android:id="@+id/bgridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="GridView" />
+
+        <Button
+            android:id="@+id/btabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="TabHost" />
+
+        <Button
+            android:id="@+id/bquickcontactbatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Quick contactc batch" />
+
+        <Button
+            android:id="@+id/bmislenious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Toggle Button, Progressbar, SeekBar, Switch, RatingBar" />
+
+        <Button
+            android:id="@+id/bsnackebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="CoordinatorLayout, AppBarLayout, NastedScrollView, FloatingButton,TextInputLayout, SnakeBar, TabLayout (All Design Item)" />
+
+        <Button
+            android:id="@+id/bwebview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="WebView" />
+
+        <Button
+            android:id="@+id/bsearchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="SearchView" />
+
+        <Button
+            android:id="@+id/bnumberpicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Number Picker" />
+
+        <Button
+            android:id="@+id/btimepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Timepicker" />
+
+        <Button
+            android:id="@+id/bdatepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="DatePicker" />
+
+        <Button
+            android:id="@+id/bcalenderview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="CalenderView" />
+
+        <Button
+            android:id="@+id/bchronometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Chronometer" />
+
+        <Button
+            android:id="@+id/btextclock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Text Clock" />
+
+
+        <Button
+            android:id="@+id/bimageswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Image Switcher" />
+
+        <Button
+            android:id="@+id/badapterviewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Adapter View Flipper" />
+
+        <Button
+            android:id="@+id/bviewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="View Flipper" />
+
+        <Button
+            android:id="@+id/bstackview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Stack View" />
+
+        <Button
+            android:id="@+id/btextswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Text Switcher" />
+
+        <Button
+            android:id="@+id/bviewanimator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="View Animator" />
+
+        <Button
+            android:id="@+id/bviewswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="View Switcher" />
+
+        <Button
+            android:id="@+id/bviewstub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="View Stub" />
+
+        <Button
+            android:id="@+id/btaxtureview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Taxture View" />
+
+        <Button
+            android:id="@+id/bsurfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Surface View" />
+
+        <Button
+            android:id="@+id/brecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Recyler view, card view, collapsing toolbar layout" />
+
+        <Button
+            android:id="@+id/bnotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Notification" />
+
+        <Button
+            android:id="@+id/bexternalfont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Externalfont" />
+
+        <Button
+            android:id="@+id/btexttospeech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Text To Speech" />
+
+        <Button
+            android:id="@+id/bswipetorefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Swipe To Refresh" />
+
+        <Button
+            android:id="@+id/bconnectioncheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Connection check" />
+
+        <Button
+            android:id="@+id/bsqlitedatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="SQLite database" />
+
+        <Button
+            android:id="@+id/banimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Animation" />
+
+        <Button
+            android:id="@+id/bpermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="API level M and above permission" />
+
+        <Button
+            android:id="@+id/bcameraapi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Camera Api" />
+
+        <Button
+            android:id="@+id/bexportcsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Export CSV" />
+
+        <Button
+            android:id="@+id/bdownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Download document(Docs/Image)" />
+
+        <Button
+            android:id="@+id/bfilepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="File Picker" />
+
+        <Button
+            android:id="@+id/brecordmedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Record Media" />
+
+        <Button
+            android:id="@+id/baudiostreaming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Audio Streaming" />
+
+        <Button
+            android:id="@+id/bvideostreaming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Video Streaming" />
+
+        <Button
+            android:id="@+id/bimagezoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Image Zoom" />
+
+        <Button
+            android:id="@+id/bcallmaillink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Call, Mail, Link" />
+
+        <Button
+            android:id="@+id/bxmlparsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="XML Parsing" />
+
+        <Button
+            android:id="@+id/bsensorexample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Sensor Example" />
+
+        <Button
+            android:id="@+id/bmenuexample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Menu Example" />
+
+        <Button
+            android:id="@+id/bservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Service" />
+
+        <Button
+            android:id="@+id/balarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Alarm" />
+
+        <Button
+            android:id="@+id/bbluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clicktogo"
+            android:text="Bluetooth" />
+    </LinearLayout>
+</ScrollView>
